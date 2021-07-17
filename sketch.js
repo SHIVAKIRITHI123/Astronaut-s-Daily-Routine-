@@ -15,7 +15,7 @@ function preload(){
   eatImg = loadAnimation("eat1.png","eat2.png");
   drinkImg = loadAnimation("drink1.png","drink2.png");
   bathImg = loadAnimation("bath1.png","bath2.png");
-  moveImg = loadAnimation("move1.png","move2.png");
+  moveImg = loadAnimation("move.png","move1.png","move.png","move1.png");
 }
 
 function setup() {
@@ -88,6 +88,7 @@ function draw() {
   if(keyDown("m")){
     astro.addAnimation("moving",moveImg);
     astro.changeAnimation("moving");
+    astro.y = 430;
     astro.velocityX = -1;
     astro.velocityY = -1;
   }
